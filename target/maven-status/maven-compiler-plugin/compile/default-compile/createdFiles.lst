@@ -1,0 +1,4 @@
+com\axon\cloud\cityrecords\cityrecordsdays\CityRecordsDaysMapReducerJobSetter.class
+com\axon\cloud\cityrecords\bean\CityInfo.class
+com\axon\cloud\cityrecords\cityrecordsdays\CityRecordsDaysMapper.class
+com\axon\cloud\cityrecords\cityrecordsdays\CityRecordsDaysReducer.class
