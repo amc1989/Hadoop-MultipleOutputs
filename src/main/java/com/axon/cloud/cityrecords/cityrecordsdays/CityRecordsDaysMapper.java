@@ -29,9 +29,6 @@ public class CityRecordsDaysMapper extends
   //  private MultipleOutputs mos;
    
     Log  log = LogFactory.getLog(CityRecordsDaysMapper.class);
-    //900011307349203232    53648   54402   1448527658  2
-    //   手机号                                                       LAC      CI       date
-    //    0                   1        2         3
     @Override
     protected void map(LongWritable key, Text value, Context context)
             throws IOException, InterruptedException {
@@ -64,15 +61,5 @@ public class CityRecordsDaysMapper extends
             log.info(str[0] + ":" + str[1]);
         }
         in.close();
-    }
-    public void DU() throws IOException{
-    	InputStream in = this.getClass().getResourceAsStream(
-                "/META-INF/laglnc.txt");
-         List<String> list = IOUtils.readLines(in);
-        System.out.println(list);
-    }
-    public static void main(String [] args) throws IOException {
-    	CityRecordsDaysMapper cm =  new CityRecordsDaysMapper();
-    	cm.DU();
     }
 }
